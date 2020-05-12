@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch=".."
+           review="https://android-review.googlesource.com/" />
+  <default revision="refs/tags/android-9.0.0_r46"
+           remote="aosp"
+           sync-j="4" />
+
+   <remove project="device/google/crosshatch" name="device/google/crosshatch" groups="device,crosshatch" />
+   <remove project="device/google/crosshatch-kernel" name="device/google/crosshatch-kernel" groups="device,crosshatch" clone-depth="1" />
+   <remove project="device/google/crosshatch-sepolicy" name="device/google/crosshatch-sepolicy" groups="device,crosshatch" />
+   <remove project="device/google/cuttlefish" name="device/google/cuttlefish" groups="device" />
+   <remove project="device/google/cuttlefish_common" name="device/google/cuttlefish_common" groups="device" />
+   <remove project="device/google/cuttlefish_kernel" name="device/google/cuttlefish_kernel" groups="device" clone-depth="1" />
+   <remove project="device/google/muskie" name="device/google/muskie" groups="device,muskie,pdk" />
+   <remove project="device/google/taimen" name="device/google/taimen" groups="device,taimen,pdk" />
+   <remove project="device/google/wahoo" name="device/google/wahoo" groups="device,wahoo,pdk" />
+   <remove project="device/google/wahoo-kernel" name="device/google/wahoo-kernel" groups="device,wahoo,pdk" clone-depth="1" />
+   <remove project="device/linaro/bootloader/arm-trusted-firmware" name="device/linaro/bootloader/arm-trusted-firmware" />
+   <remove project="device/linaro/bootloader/edk2" name="device/linaro/bootloader/edk2" />
+   <remove project="device/linaro/bootloader/OpenPlatformPkg" name="device/linaro/bootloader/OpenPlatformPkg" />
+   <remove project="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk" />
+   <remove project="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" groups="device,hikey,pdk" clone-depth="1" />
+</manifest>
